@@ -1,71 +1,68 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Home Preview](public/assets/main.png)
 
-## Available Scripts
+# NBA Matchup Predictor
+Matchup is a front-end web application created with the goal of helping basketball enthusiast. This front-end client is built with [React](https://react.dev/) functional components, styled with vanilla CSS.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Matchup was developed for basketball enthusiast who ever had a debate about which team would beat which team or how legend teams would hold up against current teams.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once on site account, the player list is available to be viewed via carousel. User can click either the right or left arrow to scroll through players.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users can select 10 players, 5 for Team A and 5 for Team B. Once players are selected, user can click button
+to have the computer calculate and determined which team would win based on players selected stats.
 
-### `npm test`
+>Future Feature: I will allow users to select 12 players for each team to reflect the amount of players on
+an NBA team
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+>Future Feature: I will fetch the players from an API so that every NBA player is listed
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the App Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine: 
+    `git clone https://github.com/DQuaya/nba-team-matchup`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the cloned repository: 
+    `cd the-brew-buddy`
 
-### `npm run eject`
+3. Install the dependencies: 
+    `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the application: 
+    `npm run preview`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application will start on http://localhost:3001.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployed Application
+You can access the deployed application at: https://nba-team-matchup.onrender.com
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Application Flow and Wireframes
 
-## Learn More
+The application has the following one screen:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Landing: Shows the players and teams.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Player List Preview](public/assets/players.png)
 
-### Code Splitting
+- Player List: Shows a list of all listed NBA Players hardcoded for now, as well as a button to add players to each team. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Team Preview](public/assets/teams.png)
 
-### Analyzing the Bundle Size
+- Team: Shows a user's selected players and with the teams assigned to those players. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Results Preview](public/assets/result2.png)
 
-### Making a Progressive Web App
+- Results: Shows user the calculate results of the teams selected stats as well as the winner between those two teams.
+### Figma:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Using Figma, I created and design the appearance of this application. 
 
-### Advanced Configuration
+![Figma](public/assets/figma.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Development Team
+DonQuaya Brown - [LinkedIn](https://www.linkedin.com/in/donquayabrown/) | [GitHub](https://github.com/DQuaya)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# nba-team-matchup
