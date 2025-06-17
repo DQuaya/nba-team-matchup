@@ -1,0 +1,205 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+section {
+  position: relative;
+  height: 450px;
+  padding: 15px;
+  padding: 0 70px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  left: 50px;
+}
+
+
+
+.card {
+  position: relative;
+  background: black;
+  border-radius: 20px;
+  margin: 20px 0;
+  /* left: 50px; */
+  box-shadow: 0 5px 10px rgb(21, 3, 221);
+  /* overflow: hidden;  */
+  border: 3px solid red;
+}
+
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  left: -0px;
+  top: -0.5px;
+  width: 100%;
+  background: blue;
+  border-radius: 20px 20px 0 0;
+   
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+section .card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: rgb(0, 0, 0);
+}
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+.card .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card .media-icons i:hover {
+  opacity: 1;
+}
+.card .name-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.name-position {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  margin-top: 10px;
+}
+
+
+.name-position .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.name-position .position {
+  font-size: 15px;
+  font-weight: 500;
+}
+.card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.card .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: blue;
+}
+.card .button {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card .button button {
+  background: red;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button button:hover {
+  background: orange;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: red;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: blue;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  font-weight: 500;
+   color: rgb(255, 255, 255);
+}
+
+.swiper .button .teamA{
+  background: red;
+}
+
+.swiper .button .teamA:hover{
+  background: black;
+  border: 1px solid red;
+  color: red;
+}
+
+.swiper .button .teamB{
+  background: blue;
+}
+
+.swiper .button .teamB:hover{
+  background: black;
+  border: 1px solid blue;
+  color: blue;
+}
