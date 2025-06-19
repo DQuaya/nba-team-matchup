@@ -82,10 +82,10 @@ const Main = () => {
       <div className="teams-wrapper">
 <div className="team-section">
   <h2 className="team-label">Team A</h2>
-  {renderTeamCard(teamA)} {/* Remove team name from this function */}
+  {renderTeamCard(teamA)} 
 </div>
 
-  {/* VS separator */}
+  
   <div className="vs-divider">VS</div>
 
 <div className="team-section">

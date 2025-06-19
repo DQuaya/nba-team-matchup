@@ -5,7 +5,7 @@ const BASE_URL = 'https://www.balldontlie.io/api/v1';
 export async function getAllPlayers() {
   let allPlayers = [];
   let page = 1;
-  const totalPages = 5; // Fetch 125 players total
+  const totalPages = 5; 
 
   while (page <= totalPages) {
     const res = await axios.get(`${BASE_URL}/players`, {
@@ -23,5 +23,5 @@ export async function getPlayerStats(playerId, season = 2023) {
     params: { season, player_ids: [playerId] }
   });
 
-  return res.data.data[0]; // May be undefined
+  return res.data.data[0]; 
 }
